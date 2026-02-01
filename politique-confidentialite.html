@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Politique de confidentialité — Example SAS</title>
+  <meta name="description" content="Politique de confidentialité du site Example SAS." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="header">
+  <div class="container header__inner">
+    <a class="logo" href="index.html" aria-label="Accueil Example SAS">Example SAS</a>
+    <nav class="nav" aria-label="Navigation principale">
+      <button class="nav__toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M4 7H20M4 12H20M4 17H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+      <div class="nav__links">
+        <a href="index.html">Accueil</a>
+        <a href="services.html">Services</a>
+        <a href="realisations.html">Réalisations</a>
+        <a class="btn btn--small" href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb">Example SAS / Confidentialité</div>
+      <h1>Politique de confidentialité</h1>
+      <p>Comment les données sont traitées lorsque tu contactes Example SAS.</p>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container">
+      <h2>1. Responsable du traitement</h2>
+      <p class="text">
+        Le responsable du traitement est : <strong>Exemple SAS</strong>.<br>
+        Contact : <a href="mailto:contact@example.com">contact@example.com</a>.
+      </p>
+
+      <h2 style="margin-top:26px;">2. Données collectées</h2>
+      <p class="text">
+        Ce site est une vitrine statique. Aucune création de compte n’est proposée.
+        Les seules données susceptibles d’être traitées sont celles que tu envoies volontairement
+        par email ou par téléphone (ex : nom, email, numéro, contenu du message).
+      </p>
+
+      <h2 style="margin-top:26px;">3. Finalités</h2>
+      <p class="text">
+        Les données sont utilisées uniquement pour :
+      </p>
+      <ul style="color:var(--muted); margin-top:8px">
+        <li>Répondre à votre demande de contact</li>
+        <li>Échanger sur un projet / une prestation</li>
+        <li>Établir un devis si vous le demandez</li>
+      </ul>
+
+      <h2 style="margin-top:26px;">4. Base légale</h2>
+      <p class="text">
+        Le traitement repose sur l’intérêt légitime (répondre aux demandes) et/ou sur l’exécution
+        de mesures précontractuelles (demande de devis).
+      </p>
+
+      <h2 style="margin-top:26px;">5. Durée de conservation</h2>
+      <p class="text">
+        Les échanges (emails, messages) sont conservés le temps nécessaire au traitement de la demande,
+        puis archivés ou supprimés selon les obligations légales et la nécessité de suivi.
+      </p>
+
+      <h2 style="margin-top:26px;">6. Destinataires</h2>
+      <p class="text">
+        Les données sont destinées uniquement à DEVORA / [À REMPLACER]. Aucune vente de données.
+      </p>
+
+      <h2 style="margin-top:26px;">7. Cookies</h2>
+      <p class="text">
+        Par défaut, ce site n’utilise pas de cookies publicitaires.  
+        <!-- Si ajout ultérieurement un outil d’analyse (ex : statistiques), cette politique devra être mise à jour
+        et une bannière cookies pourra être nécessaire. -->
+      </p>
+
+      <h2 style="margin-top:26px;">8. Tes droits</h2>
+      <p class="text">
+        Conformément au RGPD, vous disposez d'un droit d'accès, de rectification, de suppression et de limitation des données personnelles vous concernant.
+        Pour exercer vos droits : <a href="mailto:contact@example.com">contact@example.com</a>.
+      </p>
+
+      <p class="muted" style="margin-top:18px">
+        Dernière mise à jour : <span id="lastUpdate"></span>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <p>© <span id="year"></span> Example SAS</p>
+    <div style="display:flex; gap:12px; flex-wrap:wrap;">
+      <a href="mentions-legales.html">Mentions légales</a>
+      <a href="politique-confidentialite.html">Confidentialité</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+  const lu = document.getElementById("lastUpdate");
+  if (lu) lu.textContent = new Date().toLocaleDateString("fr-FR");
+</script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example SAS</title>
+    <meta name="description" content="Création de sites web, landing pages et solutions digitales. Contact direct par email ou téléphone.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <a class="logo" href="#top" aria-label="Accueil Example SAS">Example SAS</a>
+
+            <nav class="nav" aria-label="Navigation principale">
+              <button class="nav__toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+                <!-- hamburger icon -->
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M4 7H20M4 12H20M4 17H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </button>
+
+              <div class="nav__links">
+                <a href="index.html">Accueil</a>
+                <a href="services.html">Services</a>
+                <a href="realisations.html">Réalisations</a>
+                <a class="btn btn--small" href="contact.html">Contact</a>
+              </div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="top">
+        <section class="hero">
+          <div class="container hero__inner">
+            <h1>Example SAS</h1>
+            <p class="badge">Sites vitrines rapides, propres et efficaces.</p>
+            <p class="hero__text">Une présence en ligne claire, responsive et orientée conversion.</p>
+
+            <div class="hero__cta">
+              <a class="btn" href="#contact">Me contacter</a>
+              <a class="btn btn--ghost" href="#services">Voir les services</a>
+            </div>
+          </div>
+        </section>
+
+         <section id="services" class="section">
+      <div class="container">
+        <h2>Services</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Site vitrine</h3>
+            <p>1 à 5 sections, design propre, performance et SEO de base.</p>
+          </article>
+          <article class="card">
+            <h3>Landing page</h3>
+            <p>Une page qui convertit : offre, preuve sociale, contact rapide.</p>
+          </article>
+          <article class="card">
+            <h3>Optimisation</h3>
+            <p>Amélioration vitesse, structure, responsive et accessibilité.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="realisations" class="section section--alt">
+      <div class="container">
+        <h2>Réalisations</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Projet 1</h3>
+            <p>À venir — description courte du type de projet.</p>
+          </article>
+          <article class="card">
+            <h3>Projet 2</h3>
+            <p>À venir — stack, objectif, résultat.</p>
+          </article>
+          <article class="card">
+            <h3>Projet 3</h3>
+            <p>À venir — mon rôle, ce que j'ai fait.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="apropos" class="section">
+      <div class="container">
+        <h2>À propos</h2>
+        <p class="text">
+          Je m’appelle John Doe. Je crée des sites web simples, rapides et orientés résultats.
+          Mon objectif : une vitrine claire et un contact direct.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact" class="section section--alt">
+      <div class="container">
+        <h2>Contact</h2>
+
+        <div class="contact">
+          <a class="contact__item" href="tel:tel:+33000000000">+33 0 00 00 00 00</a>
+          <a class="contact__item" href="mailto:contact@example.com">contact@exemple.com</a>
+          <a class="contact__item" id="prefillMail" href="#">Envoyer un message pré-rempli</a>
+        </div>
+
+        <p class="muted">
+          Réponse rapide. N’hésite pas à préciser vos besoins (site vitrine, landing page, refonte…).
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Example SAS</p>
+      <div style="display:flex; gap:12px; flex-wrap:wrap;">
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="politique-confidentialite.html">Confidentialité</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

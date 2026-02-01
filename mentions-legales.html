@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mentions légales — Example SAS</title>
+  <meta name="description" content="Mentions légales du site Example SAS." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="header">
+  <div class="container header__inner">
+    <a class="logo" href="index.html" aria-label="Accueil Example SAS">Example SAS</a>
+    <nav class="nav" aria-label="Navigation principale">
+      <button class="nav__toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M4 7H20M4 12H20M4 17H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+      <div class="nav__links">
+        <a href="index.html">Accueil</a>
+        <a href="services.html">Services</a>
+        <a href="realisations.html">Réalisations</a>
+        <a class="btn btn--small" href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb">Example SAS / Mentions légales</div>
+      <h1>Mentions légales</h1>
+      <p>Informations légales et conditions d’utilisation du site.</p>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container">
+      <h2>Éditeur du site</h2>
+      <p class="text">
+        <strong>Nom / Raison sociale :</strong> Exemple SAS<br>
+        <strong>Statut :</strong> Société par Actions Simplifiée (SAS)<br>
+        <strong>Adresse :</strong> France<br>
+        <strong>Email :</strong> <a href="mailto:contact@example.com">contact@example.com</a><br>
+        <strong>Téléphone :</strong> <a href="tel:+33000000000">+33 0 00 00 00 00</a><br>
+        <strong>SIRET :</strong> 000 000 000 00000<br>
+        <strong>Responsable de publication :</strong>John Doe</p>
+
+      <h2 style="margin-top:26px;">Hébergement</h2>
+      <p class="text">
+        <strong>Hébergeur :</strong> [À REMPLACER]<br>
+        <strong>Adresse :</strong> [À REMPLACER]<br>
+        <strong>Téléphone :</strong> [À REMPLACER]
+      </p>
+
+      <h2 style="margin-top:26px;">Propriété intellectuelle</h2>
+      <p class="text">
+        L’ensemble du contenu présent sur ce site (textes, visuels, logos, éléments graphiques)
+        est protégé. Toute reproduction, distribution ou utilisation sans autorisation préalable
+        est interdite, sauf dispositions légales contraires.
+      </p>
+
+      <h2 style="margin-top:26px;">Responsabilité</h2>
+      <p class="text">
+        Les informations fournies sur ce site sont présentées à titre indicatif. Malgré le soin apporté,
+        l’éditeur ne peut garantir l’exactitude ou l’exhaustivité à tout moment. L’éditeur ne pourra être tenu
+        responsable d’un dommage direct ou indirect résultant de l’utilisation du site.
+      </p>
+
+      <h2 style="margin-top:26px;">Contact</h2>
+      <p class="text">
+        Pour toute question, vous pouvez écrire à :
+        <a href="mailto:contact@example.com">contact@example.com</a>
+      </p>
+
+      <p class="muted" style="margin-top:18px">
+        Dernière mise à jour : <span id="lastUpdate"></span>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <p>© <span id="year"></span> Example SAS</p>
+    <div style="display:flex; gap:12px; flex-wrap:wrap;">
+      <a href="mentions-legales.html">Mentions légales</a>
+      <a href="politique-confidentialite.html">Confidentialité</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+  const lu = document.getElementById("lastUpdate");
+  if (lu) lu.textContent = new Date().toLocaleDateString("fr-FR");
+</script>
+</body>
+</html>
