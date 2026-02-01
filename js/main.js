@@ -8,8 +8,8 @@ if (prefill) {
   prefill.addEventListener("click", (e) => {
     e.preventDefault();
 
-    const to = "contact@example.com"; // ✅ remplace par ton email
-    const subject = encodeURIComponent("Demande de contact - Example SAS");
+    const to = "contact@Exemple.com"; // ✅ remplace par ton email
+    const subject = encodeURIComponent("Demande de contact - Exemple SAS");
     const body = encodeURIComponent(
 `Bonjour John Doe,
 

@@ -1,4 +1,4 @@
-# DEVORA — Site vitrine (démo)
+# Exemple SAS — Site vitrine (démo)
 
 ⚠️ Ce projet est une version **démo publique**.
 Les informations (nom, email, téléphone, société) sont fictives.
@@ -19,4 +19,4 @@ Démontrer la création d’un site vitrine statique professionnel en HTML, CSS 
 - JavaScript (vanilla)
 
 ## Auteur
-Aziz — projet pédagogique / démonstrateur
+Démo publique — informations fictives
